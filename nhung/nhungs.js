@@ -1,0 +1,3 @@
+function baba(){
+    alert('haha');
+}
