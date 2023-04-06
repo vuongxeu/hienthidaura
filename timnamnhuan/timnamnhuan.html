@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="cc"></div>
+<button onClick=an()>The time is?</button>
+</body>
+</html>
+<script>
+  let nam = +prompt("nhập năm");
+  if(nam % 4 == 0){
+      if(nam % 100 ==0){
+          if(nam % 400 ==0){
+              alert("là năm nhuận")
+          }else{
+              alert("không phải năm nhuận")
+          }
+      }else {
+          alert("là năm nhuận")
+      }
+
+  }else {
+      alert("không phải năm nhuận")
+  }
+</script>
