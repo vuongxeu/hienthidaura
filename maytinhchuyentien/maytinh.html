@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Máy tính online</h2>
+<input type="number" placeholder="nhập số vào" id="b1">
+<input type="number" placeholder="nhập tiếp số vào" id="b2">
+<button onclick="tom()">+</button>
+<button onclick="tom1()">-</button>
+<button onclick="tom2()">*</button>
+<button onclick="tom3()">/</button>
+
+</body>
+</html>
+<script>
+    function tom() {
+        let a =   +document.getElementById('b1').value;
+        let b = +document.getElementById('b2').value;
+        let tong = a+b
+        alert(tong)
+    }
+    function tom1() {
+        let a =   +document.getElementById('b1').value;
+        let b = +document.getElementById('b2').value;
+        let hieu = a-b
+        alert(hieu)
+    }
+    function tom2() {
+        let a =   +document.getElementById('b1').value;
+        let b = +document.getElementById('b2').value;
+        let tich = a*b
+        alert(tich)
+    }
+    function tom3() {
+        let a =   +document.getElementById('b1').value;
+        let b = +document.getElementById('b2').value;
+        let thuong = a/b
+        alert(thuong)
+    }
+</script>

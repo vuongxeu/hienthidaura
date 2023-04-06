@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="nhập số tiền cần đổi" id="so">
+-
+<select id ="sl1">
+    <option value="23000">VNĐ</option>
+    <option value="1">USD</option>
+</select>
+-
+<select id="sl2">
+    <option value="23000">VNĐ</option>
+    <option value="1">USD</option>
+</select>
+<button onclick="doi()"> đổi</button>
+</body>
+</html>
+<script>
+    function doi(){
+        let tien =document.getElementById('so').value;
+        t1 = document.getElementById('sl1').value;
+        t2 = document.getElementById('sl2').value;
+        alert(tien/t1*t2)
+
+
+    }
+</script>
