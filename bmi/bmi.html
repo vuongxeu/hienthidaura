@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Xem chỉ số bmi </h2>
+<input type="text" placeholder="Nhập chiều cao vào đây" id="cao">
+<input type="text" placeholder="Nhập cân năng vào đây" id="nang">
+<button onclick="xemchiso()">xem</button>
+</body>
+</html>
+<script>
+  function xemchiso(){
+    let cao1 =document.getElementById('cao').value;
+    let nang1=document.getElementById('nang').value
+    bmi = nang1 / ( cao1 ^ 2 )
+    if(bmi<0.25){
+      alert("bmi là : " + bmi + "xuy dinh dưỡng à mày")
+    }else if (bmi <0.4){
+      alert("bmi là : " + bmi + "bình thường nha mày")
+    } else {
+      alert('bmi là : ' + bmi + 'béo như lợn')
+    }
+
+  }
+
+</script>
