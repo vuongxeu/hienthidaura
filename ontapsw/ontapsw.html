@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input  id="n">
+<button onclick="yeuem()">xem</button>
+<p id="hien"></p>
+<br>
+<input  id="n1">
+<button onclick="yeuem1()">xem</button>
+<p id="hien1"></p>
+</body>
+</html>
+<script>
+  function yeuem() {
+      let n = +document.getElementById('n').value
+      let hien = document.getElementById('hien')
+      switch (n) {
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+              hien.innerText = ("tháng " + n + " có 31 ngày")
+              break;
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+              hien.innerText = ("tháng " + n + " có 30 ngày")
+              break;
+          case 2:
+              hien.innerText = ("tháng " + n + " có 28 hoặc 29 ngày")
+              break;
+          default:
+              hien.innerText = ('lỗi')
+
+      }
+  }
+  function yeuem1() {
+      let n1 = +document.getElementById('n1').value
+      let hien1 = document.getElementById('hien1')
+      switch (n1) {
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+              hien1.innerText = ("tháng " + n1+ " có 31 ngày")
+              break;
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+              hien1.innerText = ("tháng " + n1 + " có 30 ngày")
+              break;
+          case 2:
+              hien1.innerText = ("tháng " + n1 + " có 28 hoặc 29 ngày")
+              break;
+          default:
+              hien1.innerText = ('lỗi')
+
+      }
+  }
+
+</script>
