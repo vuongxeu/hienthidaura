@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://free.vector6.com/wp-content/uploads/2021/05/PNG-0000002159-png-em-be.png"
+     width="30%" id="anh" style="position: relative; left: 100px"><br>
+
+<img id ='anh1' src="https://free.vector6.com/wp-content/uploads/2021/03/0000000848-tre-em-mam-non-co-be-vui-ve-tai-hinh-png-330.png"
+     style="position: relative; left: 1000px" width="30%"><br>
+<table>
+  <tr>
+    <td>nhân vật 1 </td><td><button onclick="phai()">phải</button></td>
+    <td><button onclick="trai()">trái</button></td>
+    <td><button onclick="xuong()">xuống</button></td>
+    <td><button onclick="len()">lên</button></td>
+  </tr>
+  <tr>
+    <td>nhân vật 2 </td><td><button onclick="phai1()">phải</button></td>
+    <td><button onclick="trai1()">trái</button></td>
+    <td><button onclick="xuong1()">xuống</button></td>
+    <td><button onclick="len1()">lên</button></td>
+  </tr>
+</table>
+</body>
+</html>
+<script>
+  px = 100
+  py = 0
+  function phai(){
+    let anhB=document.getElementById('anh')
+    px += 10
+    anhB.style.left = px + "px"
+  }
+  function trai(){
+    let anhB=document.getElementById('anh')
+    px -= 10
+    anhB.style.left = px + "px"
+  }
+  function xuong() {
+    let anhB = document.getElementById('anh')
+    py += 10
+    anhB.style.top = py + "px"
+  }
+  function len() {
+    let anhB = document.getElementById('anh')
+    py -= 10
+    anhB.style.top = py + "px"
+  }
+
+  function phai1(){
+    let anhB=document.getElementById('anh1')
+    px += 10
+    anhB1.style.left = px + "px"
+  }
+  function trai1(){
+    let anhB=document.getElementById('anh1')
+    px -= 10
+    anhB1.style.left = px + "px"
+  }
+  function xuong1() {
+    let anhB = document.getElementById('anh1')
+    py += 10
+    anhB1.style.top = py + "px"
+  }
+  function len1() {
+    let anhB = document.getElementById('anh1')
+    py -= 10
+    anhB1.style.top = py + "px"
+  }
+
+</script>

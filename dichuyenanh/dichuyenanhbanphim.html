@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://free.vector6.com/wp-content/uploads/2021/05/PNG-0000002159-png-em-be.png"
+width="30%" id="anh" style="position: relative; left: 100px">
+
+
+</body>
+</html>
+<script>
+  let px = 100
+  let py = 0
+  function phai(){
+    let anhB=document.getElementById('anh')
+    px += 10
+    anhB.style.left = px + "px"
+  }
+  function trai(){
+    let anhB=document.getElementById('anh')
+    px -= 10
+    anhB.style.left = px + "px"
+  }
+  function xuong() {
+    let anhB = document.getElementById('anh')
+    py += 10
+    anhB.style.top = py + "px"
+  }
+  function len() {
+    let anhB = document.getElementById('anh')
+    py -= 10
+    anhB.style.top = py + "px"
+  }
+  function  moveSelection(evt){
+    switch (evt.keyCode){
+      case 37 :
+        trai();
+        break;
+      case 39 :
+        phai();
+        break;
+      case 38 :
+        len();
+        break;
+      case 40:
+        xuong()
+        break;
+    }
+  }
+  function redy() {
+    window.addEventListener('keydown',moveSelection)
+  }
+  redy();
+</script>
