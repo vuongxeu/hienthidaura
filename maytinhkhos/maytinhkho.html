@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    table{
+      border-collapse: collapse;border:2px solid black;width:300px;height:500px;
+    }
+    button{
+      width: 60px;height: 30px;color: blue;
+    }
+    input{
+      width: 200px;height: 40px;color: blue;
+    }
+    th{
+      border-collapse: collapse;border: 1px solid black;
+      background-color: gray;
+    }
+    td{
+      background-color: silver;
+    }
+  </style>
+</head>
+<body>
+<h1> CASINO PRO MAX 2.2</h1>
+<table>
+  <tr><th colspan="4"><input type="text" placeholder="0" id="ip"></th></tr>
+  <tr><td><button onclick="mt(1)">1</button></td>
+    <td><button onclick="mt(2)">2</button></td>
+    <td><button onclick="mt(3)">3</button></td>
+    <td><button onclick="mt('+')">+</button></td>
+  </tr>
+  <tr><td><button onclick="mt(4)">4</button></td>
+    <td><button onclick="mt(5)">5</button></td>
+    <td><button onclick="mt(6)">6</button></td>
+    <td><button onclick="mt('-')">-</button></td>
+  </tr>
+  <tr><td><button onclick="mt(7)">7</button></td>
+    <td><button onclick="mt(8)">8</button></td>
+    <td><button onclick="mt(9)">9</button></td>
+    <td><button onclick="mt('*')">x</button></td>
+  </tr>
+  <tr><td><button onclick="xoa()" style="background-color: coral";>AC</button></td>
+    <td><button onclick="mt(0)">0</button></td>
+    <td><button onclick="bang()">=</button></td>
+    <td><button onclick="mt('/')">÷</button></td>
+  </tr>
+</table>
+</body>
+</html>
+<script>
+  function xoa(){
+    let ipb=document.getElementById('ip');
+    ipb.uvale="";
+  }
+  function mt(so){
+    let ipb=document.getElementById("ip");
+    ipb.value += so;
+  }
+  function bang(){
+    let ipb = document.getElementById('ip');
+    ipb.value=eval(ipb.value)
+  }
+</script>
