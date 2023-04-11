@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Cửa hàng điện thoại Mr.Vương, nhân viên bán hàng được trả hoa hồng theo theo nấc bậc thang:<br>
+
+- Đơn từ 0 đến 2.000.000đ, nhận 3% trên tổng đơn<br>
+
+- Đơn từ 2.000.000 đến 5000.000đ, nhận 5% trên tổng đơn<br>
+
+- Đơn trên 5.000.000đ, nhận 10% trên tổng đơn<br>
+<input type="text" placeholder="nhập số tiền" id ="tien" width="30%">
+<button onclick="dienthoai()">xem</button>
+</body>
+</html>
+<script>
+function dienthoai(){
+    let nhap= +document.getElementById("tien").value
+    let it=nhap*3/100
+    let vua=nhap*5/100
+    let nhieu=nhap*10/100
+    if( nhap <= 2000000){
+        alert("số tiền hoa hồng nhận được là " + it);
+    }else if (nhap <= 5000000){
+        alert("số tiền hoa hồng nhận được là " + vua);
+    }else if (nhap > 5000000){
+        alert("số tiền hoa hồng nhận được là " + nhieu);
+    }
+}
+  /////
+
+
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  alert("nhập số để xem kêt quả số đầu có chia hết cho số sau không")
+  let a = prompt("nhập số đầu")
+  let b = prompt("nhập số sau")
+  if (a%b==0){
+    alert(a + "chia hết" + b)
+  }else {
+      alert(a+" "+"không chia hết cho"+" "+b)
+  }
+  ////////
+  let tuoi=prompt("nhập tuổi để xem có đủ điệu kiện vào lớp 10 không nào ")
+  if (tuoi >= 15 ){
+      alert("đc anh cho mày vào lớp 10")
+  }else {
+      alert('không đủ tuổi rồi cu')
+  }
+  ////////
+  let n=prompt("nhập số vào đây ")
+  if (n>0){
+      alert(n +"  "+ "lớn hơn 0 nha ")
+  }else {
+      alert(n +"   "+ "nhỏ hơn 0 nha ")
+  }
+  /////////
+  let s1 =prompt("nhập số vô để anh kiểm tra nào ")
+  let s2 =prompt("nhập số vô để anh kiểm tra nào ")
+  let s3 =prompt("nhập số vô để anh kiểm tra nào ")
+  if(s1 > s2) {
+      if (s1 > s3) {
+          alert('số lớn nhất là' + s1)
+      } else if (s2 > s3) {
+          alert("số lớn nhất là " + s2)
+      }
+      }else {
+          alert("số lớn nhất là " + s3)
+  }
+////////////
+  let x =+prompt("nhập điểm bài kiểm tra vào đây nhanh")
+  let y =+prompt("nhập điểm giữa kì vào đây")
+  let z =+prompt("nhập điểm cuối kì vào đây")
+  sl = x+y+z
+  if(sl >= 24 ){
+      alert("học sinh giỏi")
+
+  }else if (sl >= 19) {
+      alert("học sinh khá")
+
+  }else if (sl >= 14) {
+      alert("trung bình thôi ")
+  }else {
+      alert("học ngu")
+  }
+  //////////////
+</script>
