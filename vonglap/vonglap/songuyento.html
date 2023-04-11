@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="nhap so" id = 'id'>
+<button onclick="vva()">xem</button>
+
+</body>
+</html>
+<script>
+    function vva() {
+let a = +document.getElementById("id").value
+        let lap = 0
+        while (lap < 20) {
+            let check = true
+            for (i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    check = false
+                    break;
+                }
+            }
+            if (check) {
+                document.write( a + "<br>")
+                lap++
+            }
+            a++
+
+        }
+    }
+
+
+</script>
