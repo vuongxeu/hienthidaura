@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let plo = "<table border = '2' width = '300' cellpacing = '0' cellpadding = '3'>"
+  let i = 1
+  let j = 2
+  while (i <= 10 ) {
+      plo = plo + "<tr>"
+      while (j <= 10) {
+          plo = plo + "<td>" + j + "x" + i + "=" + j * i + "</td>"
+          j++
+      }
+      j = 2;
+      i++
+      plo = plo + "</tr>"
+  } plo = plo + "</table>"
+  document.write(plo)
+</script>
