@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="id" placeholder="nhap">
+<button onclick="nhan()"> add</button>
+<button onclick="nhan1()"> display</button>
+<p id ="hien"></p>
+<hr>
+</body>
+</html>
+<script>
+    let x = 0
+    let arry = Array()
+    function nhan() {
+        arry[x] = document.getElementById("id").value
+        alert(arry[x] + x )
+        x++
+        document.getElementById("id").value =""
+    }
+     function nhan1() {
+         let e
+         for (i = 0; i < arry.length; i++) {
+             e += "Element" + i + " = " + arry[i] + "<br/>"
+             document.getElementById("hien").innerHTML = e
+         }
+
+     }
+
+
+
+
+</script>
