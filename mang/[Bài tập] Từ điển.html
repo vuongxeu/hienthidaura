@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="id" placeholder="nhap" >
+<button onclick="hien()">xem</button>
+<p id="hien"></p>
+</body>
+</html>
+<script>
+  function hien(){
+    let nhap =document.getElementById('id').value
+    let anh = ["banana", "apple", "orange", "pen", "pencil", "book"];
+    let viet = ["chuối", "táo", "cam", "bút", "bút chì", "sách"];
+    indexanh = 0
+    for (i = 0 ; i < anh.length;i++){
+      if (nhap == anh[i]){
+        indexanh = i
+        for (j=0;j<viet.length;j++){
+          if (indexanh == j){
+            indexanh = viet[j]
+          }
+        }
+      }
+
+    }
+      document.getElementById('hien').innerText = indexanh
+  }
+
+</script>
