@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let a = [33, 4, 1111, 222.44,332,3231];
+  a.sort();
+  a.sort(function(a,b) {
+    return a-b;
+  });
+  a.sort(function(a,b) {
+    return b-a;
+  });
+  document.write(a)
+</script>
